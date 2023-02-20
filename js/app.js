@@ -35,6 +35,23 @@ createApp({
     },
 
     methods: {
+        arrowRight (){
+            if (this.slideIndex < this.slides.length-1 ) {
+                this.slideIndex++
+
+            }else{
+                this.slideIndex = 0
+            }
+        },
+
+        arrowLeft (){
+            if (this.slideIndex > 0) {
+                this.slideIndex--
+
+            }else{
+                this.slideIndex = this.slides.length-1
+            }
+        }
 
     }
 }).mount('#app')
